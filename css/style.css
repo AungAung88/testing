@@ -23,12 +23,17 @@ a{
 }
 
 strong{
-    color : #03A9F5;
+    color : #C70000;
 }
 
 p.lead_devcon_date{
     font-size : 16px !important;
-    color : #03A9F5;
+    color : #C70000;  
+}
+
+p.timeline_date{
+    font-size : 16px !important;
+  /*  color : #03A9F5; */
 }
 
 p.lead_devcon_theme{
@@ -148,12 +153,17 @@ p.lead_devcon_theme{
     margin-top: 20px;
 }
 
-/* --- animated logo and photo ----*/
+/* --------- End of Nav bar section ------*/
+
+
+
+
+/* --- Intro(animated logo and photo) ----*/
 
 .logo_animate{
     width: 476px;
     height: 768px;
-    background-color: #03a9f5;
+    background-color: #C70000;
     position: absolute;
     /*position: fixed;*/
     text-align: center;
@@ -161,7 +171,7 @@ p.lead_devcon_theme{
 .title{
     width: 965px;
     height: 768px;
-    background-image: url("../img/bg_img.jpg");
+    background-image: url("../img/title_cover.jpg");
     position: relative;
     margin-left: 476px;
    /* position: fixed; */
@@ -173,23 +183,24 @@ p.lead_devcon_theme{
 div.t-1{
     margin: 0 auto;
     border-radius: 25px;
-    background: #706e6e;
+    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
     padding: 20px; 
     width: 700px;
     height: 20px;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+/*    opacity: 0.6;
+    filter: alpha(opacity=60);  */
 }
 
 div.t-2{
     margin-top: 20px;
     border-radius: 25px;
-    background: #706e6e;
+    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
+  /*  background-color: #706e6e; */
     padding: 20px; 
     width: 300px;
     height: 0px;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+  /*  opacity: 0.6;
+    filter: alpha(opacity=60); */
 }
 
 .t-1{
@@ -200,9 +211,9 @@ div.t-2{
     color: white;
     font-size: 2em;
     line-height: 0px;
-    text-align: center;
-    
+    text-align: center;  
 }
+
 
 .t-2{
     text-align: center;
@@ -329,7 +340,7 @@ svg{
     margin-right: 20px;
     padding-top: 0px;
     padding-bottom: 30px;
-    color: #03A9F5;
+    color: #C70000;
 }
 
 .normal_header{
@@ -337,10 +348,24 @@ svg{
     margin-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #03A9F5;
+    color: #C70000;
 }
 
 .devcon_header{
+    font-size: 27px !important;
+   /* color: #C70000 !important;
+    float: left;*/
+    padding-bottom: 2%;
+}
+
+.devcon_header-1{
+    font-size: 21px !important;
+   /* color: #C70000 !important;
+    float: left;*/
+    padding-bottom: 2%;
+}
+
+.devcon_header-2{
     font-size: 27px !important;
     color: #C70000 !important;
     /*float: left;*/
@@ -364,7 +389,7 @@ svg{
 
 .timeline-alert{
 	width: 600px;
-    height: 125px;
+    height: 175px;
 }
 
 .schedule-download{
@@ -375,7 +400,7 @@ svg{
 }
 
 .btn-login{
-    color: #C70000 !important;
+    color: #03A9F5 !important;
     background-color: #706e6e;
     /*border-color: #2e6da4;*/
     font-size: 12px;
@@ -393,15 +418,30 @@ svg{
 
 .btn-devcon-2{
     color: #fff;
-    background-color: #03A9F5;
+    background-color: #969696;
     font-size: 16px;
+    font-family: 'myRoboto';
+
+}
+
+.btn-red{
+    color: #fff;
+    background-color: #C70000;
+    font-size: 16px;
+    font-family: 'myRoboto';
+}
+
+.btn-timeline{
+    color: #fff;
+    background-color: #C70000;
+    font-size: 24px;
     font-family: 'myRoboto';
 
 }
 
 .btn-devcon-3{
     color: #fff;
-    background-color: #03A9F5;
+    background-color: #C70000;
     font-size: 20px;
     opacity: 0.6;
     filter: alpha(opacity=60);
