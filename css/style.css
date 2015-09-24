@@ -108,7 +108,7 @@ p.lead_devcon_theme{
 }
 
 .navbar-custom a {
-    color: #03A9F5;
+  /*  color: #03A9F5; */
 }
 
 .navbar-custom .nav li.active {
@@ -171,7 +171,7 @@ p.lead_devcon_theme{
 .title{
     width: 965px;
     height: 768px;
-    background-image: url("../img/title_cover.jpg");
+    background-image: url("../img/devcon_titlecover.jpg");
     position: relative;
     margin-left: 476px;
    /* position: fixed; */
@@ -262,6 +262,15 @@ svg{
 }
 
 
+/*------test scripts ----------- */
+
+
+
+/*---end of tests ---*/
+
+
+
+
 /*------   old logo and intro photos-------*/
 /*
 
@@ -343,6 +352,13 @@ svg{
     color: #C70000;
 }
 
+.nav_header{
+    margin-top: 0px;
+    margin-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: #C70000;
+}
 .normal_header{
     margin-top: 0px;
     margin-right: 20px;
@@ -435,7 +451,10 @@ svg{
     color: #fff;
     background-color: #C70000;
     font-size: 24px;
+   /* font-size: 24px; */  /* reactivate when event schedule is available for download */
     font-family: 'myRoboto';
+    width: 405px;
+    height: 175px;  /*--- Width and height temporary ------ */
 
 }
 
@@ -572,3 +591,5 @@ ul.embed{
     float: left;
     display: block;
 }
+
+
