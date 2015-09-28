@@ -160,45 +160,59 @@ p.lead_devcon_theme{
 
 /* --- Intro(animated logo and photo) ----*/
 
+/*
+
 .logo_animate{
+    float: left;
     width: 476px;
+    
     height: 768px;
     background-color: #C70000;
     position: absolute;
-    /*position: fixed;*/
-    text-align: center;
+ /*   position: fixed;*/
+/*    text-align: center;
 }
+
+
 .title{
-    width: 965px;
+    
+    width: auto;
+    max-width: 965px;
     height: 768px;
     background-image: url("../img/devcon_titlecover.jpg");
     position: relative;
     margin-left: 476px;
-   /* position: fixed; */
-}
+  /*  position: fixed; */
+/*  }
 .layer{
     /*margin-top: 280px;*/
-}
+/* }  */
 
 div.t-1{
     margin: 0 auto;
     border-radius: 25px;
     background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
-    padding: 20px; 
-    width: 700px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
     height: 20px;
-/*    opacity: 0.6;
+    
+  /*  display: table-cell; */
+    vertical-align: middle;
+    
+ /*   opacity: 0.6;
     filter: alpha(opacity=60);  */
 }
 
 div.t-2{
     margin-top: 20px;
     border-radius: 25px;
-    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
+    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed; 
   /*  background-color: #706e6e; */
-    padding: 20px; 
-    width: 300px;
-    height: 0px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 0px;   
   /*  opacity: 0.6;
     filter: alpha(opacity=60); */
 }
@@ -233,7 +247,7 @@ div.t-2{
 .t-3-text{
     font-size: 18px;
 }
-
+/*
 svg{
     margin-top: 280px;
     margin-left: 150px;
@@ -260,7 +274,7 @@ svg{
 .path{
     animation: ;
 }
-
+*/
 
 /*------test scripts ----------- */
 
@@ -272,31 +286,54 @@ svg{
 
 
 /*------   old logo and intro photos-------*/
-/*
+
+
+.no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .devcon-logo{
     float: left;
-    width: 470px;
+    width: 100%;
+ /*   max-width: 470px;  */
     height: 769px;
    
-    background: url(../img/logo.jpg)no-repeat center scroll;
-    background-color: #03A9F5;
+    background: url("../img/logo.png")no-repeat center scroll;
+    background-color: #C70000;
+
     
 }
 
 .intro {
+
+    display: table;
+    width: 100%;
+    height: 769px;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/devcon_titlecover.jpg") no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+
+
     
-    
-   margin-left: 470px;
+   /* margin-left: auto; */
   
-   
+   /*
     width: auto;
     height: 769px;
    
     text-align: center;
     color: #fff;
-    background: url(../img/cover_photo.jpg) no-repeat center scroll;
-    
+    background: url("../img/devcon_titlecover.jpg") no-repeat center scroll;
+    */
 }
 
 .intro .intro-body {
@@ -305,19 +342,23 @@ svg{
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 42px;
-    background: rgba(0, 0, 0, 0.5) no-repeat center center fixed;
+    font-family: "myRoboto";
+    font-weight: bolder;
+    font-size: 2em;
+    border-radius: 25px;
+    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
     line-height: 60px;
     color: #ffffff !important;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 22px;
-    font-family: 'Alegreya', serif;
+    font-family: "myRoboto";
+    border-radius: 25px;
+    font-size: 18px;
     line-height: 40px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
 }
-*/
+
 
 
 /* -------- end of intro ----*/
@@ -404,8 +445,9 @@ svg{
 }
 
 .timeline-alert{
-	width: 600px;
-    height: 175px;
+    width: 100%;
+	max-width: 600px;
+    height: auto;
 }
 
 .schedule-download{
@@ -455,6 +497,7 @@ svg{
     font-family: 'myRoboto';
     width: 405px;
     height: 175px;  /*--- Width and height temporary ------ */
+    display: none;
 
 }
 
@@ -592,4 +635,70 @@ ul.embed{
     display: block;
 }
 
+/*
+@media screen and (min-width: 300px) and (max-width: 400px){
+    .timeline{
+        position: fixed;
+        float: left;
+        width: 100%;
+    }
+    .btn-timeline{
+        display: none;
+    }
+}  */
 
+/*
+@media(max-width:767px) {
+    .logo_animate{
+        width: 100%;
+        max-width: 300px;
+        height: 768px;
+        background-color: #C70000;
+        position: absolute;
+        
+        text-align: center;
+    }
+
+    .title{
+        width: 100%;
+        max-width: 600px;
+        height: 768px;
+        background-image: url("../img/devcon_titlecover.jpg");
+        position: relative;
+        margin-left: 476px;
+       
+    }
+    
+
+    div.t-1{
+        margin: 0 auto;
+        border-radius: 25px;
+        background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+        height: 20px;
+
+    }
+
+    div.t-2{
+        margin-top: 20px;
+        border-radius: 25px;
+        background: rgba(112, 110, 110, 0.5) no-repeat center center fixed;
+    
+        padding: 20px;
+        width: 100%;
+        max-width: 300px;
+        height: 0px;
+    
+    }
+
+
+}
+
+*/
+
+
+@media screen and (min-width: 300px) and (max-width: 400px){
+
+}
