@@ -168,6 +168,15 @@ p.about, p.contact {
 	color: #C80002;
 }
 
+.lead_devcon_date{
+	font-size : 16px !important;
+    color : #C70000;
+}
+
+.download_form{
+    text-decoration: none;
+}
+
 .contact {
 	background: #E9E9E9;
 	padding: 30px 0;
